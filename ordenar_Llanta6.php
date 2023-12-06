@@ -236,114 +236,89 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
 
-  <h1>Llantas disponibles</h1>
-  <div class="album py-5 bg-body-tertiary">
-    <div class="container">
-
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+  <h1>Llanta seleccionada
+  </h1>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" >
         <div class="col">
           <div class="card shadow-sm"> 
-          <img src="images/BFGoodrich_Advantage_Touring.webp">
+          <img src="images/Michelin_Energy_XM2+.webp">
           <div class="card-body">
-              <p class="card-text">Llanta BFGoodrich Advantage Touring TL 205/60R16 92H</p>
+
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                <a href="ordenar_Llanta1.php" class="btn btn-block btn-secondary btn-sm" style="background-color: #3a5f9c; text-decoration: none; color: white;">
-                       Ordenar
-                  </a>
+                
+                  
                 </div>
-                <small class="text-body-secondary">$3,199.00</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-          <img src="images/Michelin_Pilot_Sport_3.webp">
-            <div class="card-body">
-              <p class="card-text">Llanta Michelin Pilot Sport 3 GRX XL 205/45R16 87W</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                <a href="ordenar_Llanta2.php" class="btn btn-block btn-secondary btn-sm" style="background-color: #3a5f9c; text-decoration: none; color: white;">
-                       Ordenar
-                  </a>
-                </div>
-                <small class="text-body-secondary">$5,149.00</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-          <img src="images/Bridgestone_Ecopia_EP422.webp">
-            <div class="card-body">
-              <p class="card-text">Llanta Bridgestone Ecopia EP422 Plus 205/60R16 92H</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                <a href="ordenar_Llanta3.php" class="btn btn-block btn-secondary btn-sm" style="background-color: #3a5f9c; text-decoration: none; color: white;">
-                       Ordenar
-                  </a>
-                </div>
-                <small class="text-body-secondary">$2,149.00</small>
               </div>
             </div>
           </div>
         </div>
 
         <div class="col">
-          <div class="card shadow-sm">
-          <img src="images/BFGoodrich_All_Terrain.webp">
+          <div class="card shadow-sm"> 
+         
           <div class="card-body">
-              <p class="card-text">Llanta BFGoodrich All Terrain T/A KO2 305/65R18 124/121R</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                <a href="ordenar_llanta4.php" class="btn btn-block btn-secondary btn-sm" style="background-color: #3a5f9c; text-decoration: none; color: white;">
-                       Ordenar
-                  </a>
-                </div>
-                <small class="text-body-secondary">$9,399.00</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-          <img src="images/Firestone_Firehawk_900.webp">
-            <div class="card-body">
-              <p class="card-text">Llanta Firestone Firehawk 900 215/60R15 94H</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                <a href="ordenar_Llanta5.php" class="btn btn-block btn-secondary btn-sm" style="background-color: #3a5f9c; text-decoration: none; color: white;">
-                  Ordenar
-                </a>
-                </div>
-                <small class="text-body-secondary">$2,149.00</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-          <img src="images/Michelin_Energy_XM2+.webp"> 
-              <div class="card-body">
               <p class="card-text">Llanta Michelin Energy XM2+ 165/70R14 81T</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                <a href="ordenar_Llanta6.php" class="btn btn-block btn-secondary btn-sm" style="background-color: #3a5f9c; text-decoration: none; color: white;">
-                      Ordenar
-                </a>
+               
+
                 </div>
-                <small class="text-body-secondary">$2,739.00</small>
-              </div>
+                <form action="calcular_costo.php" method="post">
+                <input type="number" name="qty" class="qty" min="1" max="99" value="1" maxlength="2" data-precio="20">
+                <input type="hidden" name="precioUnitario" value="2739">
+                <small class="text-body-secondary" >$2,739.00</small>
+                <button type="submit" class="btn btn-block btn-secondary btn-sm" style="background-color: #3a5f9c; text-decoration: none; color: white;">
+                    Pagar
+                </button>
+              </form>
+              <form action="registration.php" method="post">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Nombre en Tarjeta" name = "NombreTarjeta" required>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Num. Tarjeta" name = "NumTarjeta" required>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="email" class="form-control" placeholder="Expiracion" name = "Expiracion" required>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" placeholder="CVV" name="CVV" required>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span></span>
             </div>
           </div>
         </div>
         </div>
-      </div>
-    </div>
-  </div>
+      </form>
+              
+              </div>
+              <div></div>
 
-  </div>
+<!-- Agrega el script para realizar la solicitud al archivo PHP mediante JavaScript -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Agrega un formulario para enviar la cantidad al servidor -->
+      </div>
+
   <!-- /.content-wrapper -->
 
   <!-- Control Sidebar -->
@@ -353,13 +328,7 @@
   <!-- /.control-sidebar -->
 
   <!-- Main Footer -->
-  <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
-    All rights reserved.
-    <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 3.2.0
-    </div>
-  </footer>
+ 
 </div>
 <!-- ./wrapper -->
 

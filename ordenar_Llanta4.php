@@ -33,7 +33,7 @@
         <a href="index.php" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
+        <a href="ver_operaciones.php" class="nav-link">Ver Operaciones</a>
       </li>
     </ul>
 
@@ -241,7 +241,7 @@
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" >
         <div class="col">
           <div class="card shadow-sm"> 
-          <img src="images/BFGoodrich_Advantage_Touring.webp">
+          <img src="images/BFGoodrich_All_Terrain.webp">
           <div class="card-body">
 
               <div class="d-flex justify-content-between align-items-center">
@@ -258,7 +258,7 @@
           <div class="card shadow-sm"> 
          
           <div class="card-body">
-              <p class="card-text">Llanta BFGoodrich Advantage Touring TL 205/60R16 92H</p>
+              <p class="card-text">Llanta BFGoodrich All Terrain T/A KO2 305/65R18 124/121R</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                
@@ -266,12 +266,47 @@
                 </div>
                 <form action="calcular_costo.php" method="post">
                 <input type="number" name="qty" class="qty" min="1" max="99" value="1" maxlength="2" data-precio="20">
-                <input type="hidden" name="precioUnitario" value="3199">
-                <small class="text-body-secondary" >$3199.00</small>
+                <input type="hidden" name="precioUnitario" value="9399">
+                <small class="text-body-secondary" >$9,399.00</small>
                 <button type="submit" class="btn btn-block btn-secondary btn-sm" style="background-color: #3a5f9c; text-decoration: none; color: white;">
-                    Proceder al pago
+                    Pagar
                 </button>
-</form>
+              </form>
+              <form action="registration.php" method="post">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Nombre en Tarjeta" name = "NombreTarjeta" required>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Num. Tarjeta" name = "NumTarjeta" required>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="email" class="form-control" placeholder="Expiracion" name = "Expiracion" required>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" placeholder="CVV" name="CVV" required>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span></span>
+            </div>
+          </div>
+        </div>
+        </div>
+      </form>
               </div>
               <div></div>
 

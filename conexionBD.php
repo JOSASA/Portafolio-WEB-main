@@ -14,7 +14,7 @@
         $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "tallerweb";
+    $dbname = "users_crud_php";
     
         $connect=mysqli_connect($servername, $username, $password);
     
